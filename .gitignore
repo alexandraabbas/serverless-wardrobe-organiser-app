@@ -133,3 +133,7 @@ dmypy.json
 
 # MacBook
 .DS_Store
+
+# Images
+*.png
+*.jpg
