@@ -3,11 +3,11 @@
 ## Delpoy cloud functions
 
 ```bash
-gcloud functions deploy hello_get --runtime python37 --trigger-http
+gcloud functions deploy upload_image --runtime python37 --trigger-http
 ```
 
 ## Trigger cloud functions
 
 ```bash
-curl "https://REGION-PROJECT_ID.cloudfunctions.net/hello_get"
+curl -X POST "https://us-central1-datatonic-uk-research.cloudfunctions.net/upload_image" -H "Content-Type:application/json" -d '{"user": "alexaabbas", "image": "img.png"}'
 ```
